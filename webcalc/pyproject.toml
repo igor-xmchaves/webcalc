@@ -1,0 +1,20 @@
+[project]
+name = "webcalc"
+version = "0.0.1"
+description = "Uma calculadora web baseada em Flask"
+authors = [
+    {name = "Igor Chaves",email = "ds.igorchaves@gmail.com"}
+]
+
+requires-python = ">=3.9"
+dependencies = [
+    "flask (>=3.1.1,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "webcalc", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
